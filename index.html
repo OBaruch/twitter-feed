@@ -2,10 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Twitter Feed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tweets by @OBaruchML</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 1.8rem;
+      color: #1DA1F2;
+      margin-bottom: 1rem;
+    }
+    .feed-container {
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body>
-  <a class="twitter-timeline" href="https://twitter.com/OBaruchML?ref_src=twsrc%5Etfw">Tweets by OBaruchML</a> 
+
+  <h1>Tweets by @OBaruchML</h1>
+
+  <div class="feed-container">
+    <a class="twitter-timeline"
+       data-lang="en"
+       data-width="500"
+       data-height="500"
+       href="https://twitter.com/OBaruchML?ref_src=twsrc%5Etfw">
+      Tweets by OBaruchML
+    </a>
+  </div>
+
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 </body>
 </html>
