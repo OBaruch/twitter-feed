@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tweets by @OBaruchML</title>
+  <meta charset="UTF-8">
+  <title>Baruch's X Feed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      background: #f9f9f9;
+      background-color: #0d1117;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
+      height: 100vh;
+      margin: 0;
     }
-    h1 {
-      font-size: 1.8rem;
-      color: #1DA1F2;
-      margin-bottom: 1rem;
-    }
-    .feed-container {
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    .twitter-feed {
+      border: 1px solid #30363d;
       border-radius: 12px;
       overflow: hidden;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     }
   </style>
 </head>
 <body>
 
-  <h1>Tweets by @OBaruchML</h1>
-
-  <div class="feed-container">
-    <a class="twitter-timeline"
-       data-lang="en"
-       data-width="500"
-       data-height="500"
-       href="https://twitter.com/OBaruchML?ref_src=twsrc%5Etfw">
+  <div class="twitter-feed">
+    <a 
+      class="twitter-timeline" 
+      data-theme="dark"
+      data-width="500"
+      data-height="600"
+      data-chrome="noheader nofooter noborders transparent"
+      href="https://twitter.com/OBaruchML?ref_src=twsrc%5Etfw">
       Tweets by OBaruchML
     </a>
   </div>
